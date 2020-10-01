@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@600;700&family=Poppins:wght@400;500&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
     <title>Ênfase</title>
 </head>
@@ -94,28 +95,16 @@
 
         <!--page four-->
         <div id="our-jobs">
-            <div class="container">
-
-                <div class="slide active">
-                    <img src="imgs\Telefone.png" alt="">
-                    <div class="heading">
-                        <h1>Social</h1>
-                        <h1>media</h1>
-                    </div>
-                </div>
-
-                <div class="slide">
+            <div class="carousel-container">
+                <i class="fas fa-arrow-left" id="prevBtn"></i>
+                <i class="fas fa-arrow-right" id="nextBtn"></i>
+                <div class="carousel-slide">                
+                    <img src="imgs/Telefone.png" alt="">
                     <img src="imgs/Código.png" alt="">
-                    <div class="heading">
-                        <h1>Desenvolvimento</h1>
-                        <h1>de Sites</h1>
-                    </div>
+                    <img src="imgs/Design.png" alt="">
                 </div>
-                
-                <i class="left-arrow"></i>
-                <i class="right-arrow"></i>
             </div>
-            
+
             <div class="scroll-down">
                 <p>ENTRE EM CONTATO</p>
                 <a href="#contact"><i class="icon arrow"></i></a>
@@ -151,7 +140,7 @@
     </div>
 
     <!--JAVASCRIPT IMPORTS-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
     <script src="script.js"></script>
 </body>
 </html>

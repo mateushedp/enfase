@@ -226,72 +226,45 @@ h3{
     padding-top: 60px;
 }
 
-#our-jobs .container {
-    width: 100%;
-    height: 400px;
-    text-align: left;
-    padding: 0;
+.carousel-container{
+    width: 70%;
+    margin: auto;
+    height: 75%;
+    overflow: hidden;
+    position: relative;
 }
 
-#our-jobs .container .slide {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    display: none;
-}
-
-#our-jobs .container .slide.active {
-    display: flex;
-}
-
-
-#our-jobs .container .slide img {
-    height: 100%;
-    width: 50%;
-}
-
-#our-jobs .container .slide .heading {
+.carousel-container i{
     position: absolute;
-    width: 500px;
-    height: 200px;
-    margin: 100px 35%;
+    top: 50%;
+    color: white;
+    font-size: 30px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#prevBtn {
+    left: 5%;
+}
+
+#nextBtn {
+    right: 5%;
+}
+
+.carousel-slide {
+    display: flex;
+    width: 100%;
     
 }
 
-#our-jobs .container .slide .heading h1 {
-    line-height: 100px;
-    margin: 0;
-    text-align: left;
-}
-
-#our-jobs .container .slide .heading h1:nth-child(2){
-    text-align: right;
-    color: black;
-    -webkit-text-stroke: 2px #f2f2f2;
-}
-
-#our-jobs .container i {
-    height: 24px;
-    width: 24px;
-    cursor: pointer;
-    position: absolute;
-    margin-top: 200px;
-}
-
-#our-jobs .container .left-arrow {
-    background: url('icons/arrow-left.svg');
-    left: auto;
-}
-
-#our-jobs .container .right-arrow {
-    background: url('icons/arrow-right.svg');
-    right: 10px;
+.carousel-slide img{
+    min-width: 100%;
+    height: 100%;
 }
 
 #our-jobs .scroll-down {
     color: white;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 #contact {
