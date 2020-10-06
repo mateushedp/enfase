@@ -1,5 +1,6 @@
 const carouselSlide = document.querySelector(".carousel-slide");
 const carouselImages = document.querySelectorAll(".carousel-slide img");
+let jobTitle = ["Social <span>Media</span>", "Desenvol<span>vimento</span>", "Web <span>Design</span>"];
 
 const prevBtn = document.querySelector("#prevBtn");
 const nextBtn = document.querySelector("#nextBtn");
@@ -18,6 +19,7 @@ nextBtn.addEventListener('click', ()=>{
         counter = 0;
     }
     
+    document.getElementById("jobs-title").innerHTML = jobTitle[counter];
     carouselSlide.style.transform = "translateX(" + (-size * counter) + "px)";
 
 })
@@ -29,6 +31,7 @@ prevBtn.addEventListener('click', ()=>{
     }else {
         counter = carouselImages.length-1;
     }
+    document.getElementById("jobs-title").innerHTML = jobTitle[counter];
     carouselSlide.style.transform = "translateX(" + (-size * counter) + "px)";
 })
 

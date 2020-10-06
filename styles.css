@@ -7,9 +7,9 @@
 
 html, body {
     scroll-behavior: smooth;
-     height: 100%; 
-     width: 100%; 
-     margin: 0; 
+    height: 100%; 
+    width: 100%; 
+    margin: 0; 
 }
 
 #home{
@@ -223,15 +223,17 @@ h3{
 #our-jobs {
     height: 630px;
     background-color: black;
-    padding-top: 60px;
+    /*padding-top: 60px;*/
 }
 
 .carousel-container{
-    width: 70%;
+    width: 100%;
     margin: auto;
     height: 75%;
     overflow: hidden;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .carousel-container i{
@@ -241,6 +243,22 @@ h3{
     font-size: 30px;
     z-index: 10;
     cursor: pointer;
+}
+
+#jobs-title{
+    font-family: Eczar;
+    position: absolute;
+    top: 20%; 
+    color: white;
+    -webkit-text-stroke: 2px black;
+    font-size:140px;
+    line-height: 120px;
+    z-index: 9;
+}
+
+#jobs-title span{
+    color: black;
+    -webkit-text-stroke: 1.5px white;
 }
 
 #prevBtn {
@@ -264,7 +282,7 @@ h3{
 
 #our-jobs .scroll-down {
     color: white;
-    margin-top: 70px;
+    margin-top: 85px;
 }
 
 #contact {
